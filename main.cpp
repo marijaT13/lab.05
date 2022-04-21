@@ -155,7 +155,7 @@ int main() {
 
  	std::fstream log("Students.log", std::fstream::app | std::fstream::out);
  	log<<asctime(timeinfo)<<filename<<endl;
-
+	log<<"Vashi odgovori: "<<endl;
     // Otvoranje na datotekata so prasanja i prevzemanje na soodvetnoto prasanje i negovite odgovori
 
     test.open("prashanja.txt");
@@ -178,7 +178,7 @@ int main() {
     }
 
  	log<<"Vkupno poeni: "<<poeni<<endl;
-
+	log<< "Vashata ocenka: " << score(poeni) << endl;
 
 
     test.close();
